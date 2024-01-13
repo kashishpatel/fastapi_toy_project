@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from app.utils.jwt_auth import create_jwt_token
 from app.models.models import UserLogin
 
-router = APIRouter()
+router = APIRouter(tags=["JWT Token"])
 
 # Endpoint to generate a JWT token for authentication
 @router.post("/token")

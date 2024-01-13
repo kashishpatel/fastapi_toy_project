@@ -6,9 +6,8 @@ from app.config.settings import settings
 # Create an instance of the FastAPI app for this module
 app = APIRouter(prefix=settings.API_PREFIX)
 
-
-# Define your API routes and handlers here
-@app.get("/")
+# Define the API routes and handlers here
+@app.get("/", tags=["Root"])
 async def read_root():
     return {"message": "Hello from the app!"}
 

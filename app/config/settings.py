@@ -1,8 +1,4 @@
 from pydantic import BaseSettings
-import sys 
-  
-  
-
 
 class Settings(BaseSettings):
     SECRET_KEY: str

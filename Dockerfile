@@ -23,8 +23,6 @@ COPY . /app/
 # Expose the port that the FastAPI application will run on
 EXPOSE 8000
 
-#CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /app/entrypoint.sh
 

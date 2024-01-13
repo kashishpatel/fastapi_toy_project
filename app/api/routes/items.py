@@ -5,7 +5,7 @@ from ..crud.items import create_item, get_items, get_item, update_item, delete_i
 from ..dependencies.database import get_db
 from app.utils.jwt_auth import verify_jwt_token
 
-router = APIRouter()
+router = APIRouter(tags=["Items"])
 
 # Create an item
 @router.post("/items/", response_model=ItemResponse)

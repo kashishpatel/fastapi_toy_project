@@ -1,4 +1,3 @@
-import sys
 from sqlalchemy.orm import Session
 from app.db.database import SessionLocal
 
@@ -6,7 +5,6 @@ from app.db.database import SessionLocal
 def get_db() -> Session:
     db = SessionLocal()
     try:
-        sys.stdout.write("Database connection established\n")
         yield db
     finally:
         db.close()

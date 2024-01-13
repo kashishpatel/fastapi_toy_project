@@ -5,7 +5,7 @@ from app.main import app as app1
 # Create an instance of the FastAPI project-level app
 project_app = FastAPI()
 
-# Include individual FastAPI apps (app1 and app2) into the project-level app
+# Include individual FastAPI apps (app1...) into the project-level app
 project_app.include_router(app1)
 
 # Additional project-wide configurations
