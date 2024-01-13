@@ -6,4 +6,6 @@ Auth is done via JWT. A token can be retrieved by making a GET request to the `/
 
 A simple PostgresQL database is also created with a `items` table and an initial database migration use Alembic.
 
-Contains a Dockerfile and is runnable using `docker-compose up --build`
+Contains a Dockerfile and is runnable using `docker-compose up --build`.
+
+Once the Docker container is running, you can view and test out the API endpoints at `localhost:8000/docs`.
