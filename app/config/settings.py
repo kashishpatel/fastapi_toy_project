@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     DEBUG: bool
     API_PREFIX: str
 
+    CURRENCY_API_BASE_URL: str
+
     class Config:
         env_file = ".env"  # Load environment variables from a .env file
 
