@@ -4,7 +4,7 @@ Created to learn Python's FastAPI web framework, this project contains a simple 
 
 Auth is done via JWT. A token can be retrieved by making a GET request to the `/api/v1/token`.
 
-A simple PostgresQL database is also created with a `items` table and an initial database migration use Alembic.
+A simple PostgreSQL database is also created with a `items` table through an initial database migration using Alembic.
 
 Contains a Dockerfile and is runnable using `docker-compose up --build`.
 
