@@ -1,12 +1,16 @@
 # FastAPI Toy Project
 
-Created to learn Python's FastAPI web framework, this project contains a simple CRUD API centered around an `Item` object.
+Created to learn Python's FastAPI web framework, this project contains a simple CRUD APIs centered around an `Item` object.
 
+# RESTful API
 Auth is done via JWT. A token can be retrieved by making a GET request to the `/api/v1/token`.
 
 A simple PostgreSQL database is also created with a `items` table through an initial database migration using Alembic.
 
 There are also API endpoints that retrieve data from an another API using `httpx`, transform it, and return it to the user as an exercise in connecting to external resources. There is also in-memory caching in place to prevent unnecessary requests to the API.
+
+# GraphQL API
+An GraphQL API with the same operations as the RESTful API for the `Item` object is also created and running. GraphiQL to test this API is available at `/graphql`.
 
 Contains a Dockerfile and is runnable using `docker-compose up --build`.
 
