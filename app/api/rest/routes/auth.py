@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter
 from app.utils.jwt_auth import create_jwt_token
-from ..schemas.auth import UserLogin
+from ...schemas.auth import UserLogin
 
 router = APIRouter(tags=["JWT Token"])
 

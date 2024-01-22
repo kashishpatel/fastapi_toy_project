@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from app.utils.jwt_auth import verify_jwt_token
-from ..schemas.currency import (
+from ...schemas.currency import (
     CurrencyResponse,
     ExchangeRatePair,
     ExchangeRateResponse,

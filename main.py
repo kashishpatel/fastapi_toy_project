@@ -1,12 +1,14 @@
 from fastapi import FastAPI
 import uvicorn
-from app.main import app as app1
+from app.main import app as rest_api
+from app.api.graphql.main import app as graphql_api
 
 # Create an instance of the FastAPI project-level app
 project_app = FastAPI()
 
 # Include individual FastAPI apps (app1...) into the project-level app
-project_app.include_router(app1)
+project_app.include_router(rest_api)
+project_app.include_router(graphql_api)
 
 # Additional project-wide configurations
 # ...

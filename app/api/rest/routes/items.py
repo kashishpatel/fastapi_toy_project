@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from ..schemas.items import ItemCreate, ItemResponse
-from ..crud.items import create_item, get_items, get_item, update_item, delete_item
-from ..dependencies.database import get_db
+from ...schemas.items import ItemCreate, ItemResponse
+from ...crud.items import create_item, get_items, get_item, update_item, delete_item
+from ...dependencies.database import get_db
 from app.utils.jwt_auth import verify_jwt_token
 
-router = APIRouter(tags=["Items"])
+router = APIRouter(tags=["Items REST API"])
 
 # Create an item
 @router.post("/items/", response_model=ItemResponse)

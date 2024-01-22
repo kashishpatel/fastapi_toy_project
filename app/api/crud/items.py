@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.db import models  # Import your SQLAlchemy models from the database module
+from app.db import models
 from ..schemas.items import ItemCreate, ItemResponse
 
 # Create a new item in the database

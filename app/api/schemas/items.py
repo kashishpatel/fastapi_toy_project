@@ -12,7 +12,7 @@ class ItemResponse(BaseModel):
     description: str
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Schema for updating an item
 class ItemUpdate(BaseModel):

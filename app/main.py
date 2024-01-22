@@ -1,8 +1,7 @@
 from fastapi import APIRouter
-from app.api.routes.items import router as items_router
-from app.api.routes.auth import router as auth_router
-from app.api.routes.currency import router as currency_router
-
+from app.api.rest.routes.items import router as items_rest_router
+from app.api.rest.routes.auth import router as auth_router
+from app.api.rest.routes.currency import router as currency_router
 from app.config.settings import settings
 
 # Create an instance of the FastAPI app for this module
@@ -15,6 +14,7 @@ async def read_root():
 
 # Additional route definitions and configurations specific to this app
 # ...
-app.include_router(items_router)
 app.include_router(auth_router)
 app.include_router(currency_router)
+app.include_router(items_rest_router)
+
