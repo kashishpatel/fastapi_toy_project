@@ -6,7 +6,7 @@ Auth is done via JWT. A token can be retrieved by making a GET request to the `/
 
 A simple PostgreSQL database is also created with a `items` table through an initial database migration using Alembic.
 
-There are also API endpoints that retrieve data from an another API using `httpx`, transform it, and return it to the user as an exercise of connecting to external resources. There is also in-memory caching in place to prevent unnecessary requests to the API.
+There are also API endpoints that retrieve data from an another API using `httpx`, transform it, and return it to the user as an exercise in connecting to external resources. There is also in-memory caching in place to prevent unnecessary requests to the API.
 
 Contains a Dockerfile and is runnable using `docker-compose up --build`.
 
